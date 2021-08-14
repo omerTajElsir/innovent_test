@@ -20,6 +20,25 @@ class SlideItem extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(15)),
               color: Colors.white,
             ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  sliderArrayList[index].sliderHeading,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 17),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Text(
+                    sliderArrayList[index].sliderSubHeading,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
+                  ),
+                )
+              ],
+            ),
           ),
           CircleAvatar(
             radius: 40,

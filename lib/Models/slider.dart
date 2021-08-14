@@ -1,4 +1,4 @@
-import '/utils/constants.dart';
+import 'package:innovent_test/Utils/globals.dart';
 
 class Slider {
   final String sliderImageUrl;

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:innovent_test/Utils/theme.dart';
 
 class SlideDots extends StatelessWidget {
   bool isActive;
@@ -10,17 +11,17 @@ class SlideDots extends StatelessWidget {
     return AnimatedContainer(
       duration: Duration(milliseconds: 150),
       margin: const EdgeInsets.symmetric(horizontal: 4),
-      height: isActive ? 10 : 6,
-      width: isActive ? 10 : 6,
+      height: 8,
+      width: 8,
       decoration: BoxDecoration(
-        color: isActive ? Color(0xFF169078) : Colors.grey.shade300,
+        color: isActive ? AppColors.grey : Colors.transparent,
         border: isActive
             ? Border.all(
-                color: Color(0xFF169078),
-                width: 2.0,
+                color: AppColors.grey,
+                width: 1,
               )
             : Border.all(
-                color: Colors.transparent,
+                color: AppColors.grey,
                 width: 1,
               ),
         borderRadius: BorderRadius.all(Radius.circular(12)),

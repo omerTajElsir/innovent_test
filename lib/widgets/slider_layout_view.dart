@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:innovent_test/Models//slider.dart';
+import 'package:innovent_test/UI/home.dart';
 import 'package:innovent_test/Utils/theme.dart';
 
 import '/widgets/slide_dots.dart';
@@ -83,9 +84,20 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
                   ),
                 ),
                 Expanded(child: Container()),
-                Text(
-                  "Skip",
-                  style: TextStyle(color: AppColors.grey),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyHomePage()),
+                    );
+                  },
+                  child: Text(
+                    "Skip",
+                    style: TextStyle(
+                        color: AppColors.grey,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w700),
+                  ),
                 ),
                 Expanded(child: Container()),
               ],
