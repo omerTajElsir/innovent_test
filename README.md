@@ -1,6 +1,6 @@
 # innovent test
 
-A Flutter application to make web links shortcuts as an interview test.
+A Flutter application to make web links shortcuts.
 
 ## Development Environment 
 
